@@ -6,4 +6,7 @@
 
 body{
   font-family: sans-serif;
+  background-image: url('./assets/background.png');
+  background-repeat: repeat;
+  background-size: 40%;
 }
