@@ -1,0 +1,64 @@
+.lista-filmes {
+    width: 100%;
+    max-width: 1280px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lista-filmes article {
+    width: 100%;
+    max-width: 300px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.lista-filmes img {
+    width: 100%;
+    max-width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.detalhes-filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.detalhes-filme h2 {
+    color: #FFF;
+    font-size: 16px;
+    min-height: 3em;
+}
+
+.flex-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.flex-buttons a {
+    text-decoration: none;
+    background-color: #ca342a;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+    flex: 1;
+}
+
+.flex-buttons a i {
+    margin-right: 2px;
+}
