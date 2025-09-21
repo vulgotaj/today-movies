@@ -4,7 +4,7 @@ footer {
     color: #FFF;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    text-align: center;
     align-items: center;
     gap: 1rem;
 }
