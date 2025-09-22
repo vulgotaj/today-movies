@@ -62,7 +62,7 @@ if(loading) {
         <section className="filme-sec">
             
             <div className="filme-img">
-                <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt={filme.title} />
+                <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title} />
             </div>
 
             <div className="filme-desc">
@@ -85,6 +85,19 @@ if(loading) {
                 <p>Duração:
                     {filme.runtime ? `${filme.runtime} min` : 'Não informada'}
                 </p>
+
+                <p>Sinopse: {filme.overview ? `${filme.overview}` : 'Não informada'}</p>
+
+                <h3>Nota: {filme.vote_average.toFixed(1)} / 10</h3>
+
+                <div className="filme-flex-buttons">
+                    <button onClick={salvarFilme}>Salvar</button>
+                    <button>
+                        <a target="blank" rel="external" href={`https://youtube.com/results?search_query=${filme.title} Trailer`}>
+                            Trailer
+                        </a>
+                    </button>
+                </div>
             </div>
 
         </section>
