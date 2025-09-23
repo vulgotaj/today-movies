@@ -11,13 +11,11 @@
 .lista-filmes article {
     width: 100%;
     max-width: 300px;
-    background-color: #222;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
 }
 
 .lista-filmes img {
@@ -34,6 +32,9 @@
     justify-content: center;
     text-align: center;
     padding: 20px 10px;
+    background-color: #222;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .detalhes-filme h2 {
@@ -57,8 +58,34 @@
     border-radius: 4px;
     padding: 10px;
     flex: 1;
+    transition: ease 0.8s;
+}
+
+.flex-buttons a:hover{
+    background-color: #FFF;
+    color: #ca342a;
 }
 
 .flex-buttons a i {
     margin-right: 2px;
+}
+
+.loading {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading h1{
+    color: #ca342a;
+    font-size: 40px;
+}
+
+.loading p {
+    color: #FFF;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
 }

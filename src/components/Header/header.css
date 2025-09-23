@@ -29,10 +29,16 @@ header {
     padding: 10px 16px;
     border-radius: 4px;
     letter-spacing: 1px;
+    transition: ease 0.8s;
 }
 
 .favoritos i {
     margin-right: 2px;
+}
+
+.favoritos:hover {
+    background-color: #FFF;
+    color: #ca342a;
 }
 
 @media (max-width: 1200px) {

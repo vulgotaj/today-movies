@@ -15,10 +15,20 @@ footer a{
     color: #FFF;
     display: flex;
     align-items: center;
+    transition: ease 0.8s;
 }
 
 footer a i{
     font-size: 22px;
     margin-right: 8px;
     color: #ca342a;
+    transition: ease 0.8s;
+}
+
+footer a:hover {
+    color: #ca342a;
+}
+
+footer a:hover i {
+    color: #FFF;
 }

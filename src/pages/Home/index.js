@@ -28,8 +28,10 @@ function Home() {
 
     if(loading) {
         return (
-            <section>
+            <section className="loading">
                 <h1>CARREGANDO...</h1>
+                <p>Aguarde um momento, por favor</p>
+                <p>Caso demore mais do que 5 segundos, tente recarregar a página.</p>
             </section>
         )
     }
@@ -43,7 +45,7 @@ function Home() {
 
                         <article key={filme.id}>
 
-                            <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} />
+                            <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title} />
                             <div className="detalhes-filme">
                                 <h2>{filme.title}</h2>
                                 <div className="flex-buttons">

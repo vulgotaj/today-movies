@@ -1,0 +1,29 @@
+.error {
+    min-height: calc(100vh - 80px);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.error h1 {
+    color: #ca342a;
+    font-size: 80px;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.error h2 {
+    color: #ca342a;
+    font-size: 60px;
+    font-style: italic;
+}
+
+.error p {
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 24px;
+}
+
+.error p a {
+    color: #ca342a;
+}

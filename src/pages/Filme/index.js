@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import './filme.css';
 
 import api from '../../services/api';
@@ -42,12 +43,13 @@ function salvarFilme() {
     const hasFilme = filmesSalvos.some((filmesSalvo) => filmesSalvo.id === filme.id)
 
     if(hasFilme) {
+        toast.warn("Você já adicionou este filme aos favoritos!!");
         return;
     }
 
     filmesSalvos.push(filme);
     localStorage.setItem("@todaymovies", JSON.stringify(filmesSalvos));
-    
+    toast.success("Filme adicionado aos favoritos!");
 }
 
 if(loading) {
@@ -91,12 +93,10 @@ if(loading) {
                 <h3>Nota: {filme.vote_average.toFixed(1)} / 10</h3>
 
                 <div className="filme-flex-buttons">
-                    <button onClick={salvarFilme}>Salvar</button>
-                    <button>
-                        <a target="blank" rel="external" href={`https://youtube.com/results?search_query=${filme.title} Trailer`}>
-                            Trailer
-                        </a>
-                    </button>
+                    <a href="#" onClick={salvarFilme}>Salvar</a>
+                    <a target="blank" rel="external" href={`https://youtube.com/results?search_query=${filme.title} Trailer`}>
+                        Trailer
+                    </a>
                 </div>
             </div>
 
