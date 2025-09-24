@@ -53,10 +53,12 @@ function salvarFilme() {
 }
 
 if(loading) {
-    return(
-        <div className="filme-info">
+    return (
+        <section className="loading">
             <h1>CARREGANDO...</h1>
-        </div>
+            <p>Aguarde um momento, por favor</p>
+            <p>Caso demore mais do que 5 segundos, tente recarregar a página.</p>
+        </section>
     )
 }
 
